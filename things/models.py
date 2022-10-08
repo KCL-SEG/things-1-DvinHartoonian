@@ -12,7 +12,7 @@ class Thing(Model):
     quantity = models.IntegerField(
                                     unique = False,
                                     validators = [
-                                        MaxValueValidator(100)
+                                        MaxValueValidator(100),
                                         MinValueValidator(0)
                                     ]
     )
